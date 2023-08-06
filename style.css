@@ -1,0 +1,57 @@
+:root {
+    --bg-color: #323437;
+    --main-color: #e2b714;
+    --caret-color: #e2b714;
+    --sub-color: #646669;
+    --sub-alt-color: #2c2e31;
+    --text-color: #d1d0c5;
+    --error-color: #ca4754;
+    --error-extra-color: #7e2a33;
+    --colorful-error-color: #ca4754;
+    --colorful-error-extra-color: #7e2a33;
+}
+
+main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height:40vh;
+}
+
+.container .task {
+    color:var(--text-color)
+}
+
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    position:absolute;
+    background-color: var(--bg-color);
+    outline: none;
+    margin-bottom: 120px;
+    border:none;
+    color:var(--text-color);
+    font-size:8rem;
+    transition:all 0.25s;
+    font-weight: bold;
+}
+
+button.click {
+    transform: translate(0 , -20vh);
+    font-size: 4rem;
+}
+
+
+button:hover {
+    color: var(--main-color);
+    cursor:pointer;
+}
+body {
+    background-color:var(--bg-color);
+}
