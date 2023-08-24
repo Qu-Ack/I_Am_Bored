@@ -1,6 +1,8 @@
 class DOM {
     magic = document.querySelector('.magic');
-    task = document.querySelector('.task')
+    task = document.querySelector('.task');
+    taskContainer = document.querySelector('.task-container');
+
 }
 
 let dom = new DOM();    
@@ -24,6 +26,7 @@ function domUpdate(obj) {
 function listen() {
     dom.magic.addEventListener('click' , function(e) {
         dom.magic.classList.add("click")
+        dom.taskContainer.classList.add("active");
         apiCall("http://www.boredapi.com/api/activity/");
     })
 }
